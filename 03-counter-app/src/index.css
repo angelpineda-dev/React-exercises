@@ -1,0 +1,22 @@
+html,
+body {
+  align-items: center;
+  background-color: rgb(24, 27, 58);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  height: 100vh;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+button {
+  font-size: 1.3rem;
+  padding: 0 10px;
+}
