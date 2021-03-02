@@ -15,7 +15,7 @@ export const AddCategory = ({ setCategories }) => {
     if (inputValue.trim().length > 2) {
       setCategories((cats) => [...cats, inputValue]);
       setInputValue("");
-      console.log("Enviado");
+      // console.log("Enviado");
     } else {
       console.warn("El campo no debe estar vacio o ser mayor a una letra");
     }
