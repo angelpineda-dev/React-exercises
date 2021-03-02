@@ -5,3 +5,33 @@
 body {
   padding: 60px;
 }
+
+input{
+  color: gray;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.card-flex{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  min-width: 420px;
+}
+
+.card{
+  align-content: center;
+  border: 1px solid gray;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 10px auto;
+  min-width: 350px;
+  max-width: 48%;
+  text-align: center;
+  box-shadow: 0px 0px 4px gray;
+}
+
+.card p{
+  padding: 5px;
+}
