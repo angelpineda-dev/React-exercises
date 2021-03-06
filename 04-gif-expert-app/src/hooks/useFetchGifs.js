@@ -7,14 +7,15 @@ export const useFetchGifs = (category) => {
     loading: true
 })
 
+// This handle changes on our componen.
 useEffect(() => {
   getGifs(category)
     .then( imgs => {
-      setState({
+        setState({
         data: imgs,
         loading: false
-      })
-    })
+      });
+    });
   
 }, [category])
 

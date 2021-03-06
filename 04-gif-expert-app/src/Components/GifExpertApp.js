@@ -3,12 +3,9 @@ import { AddCategory } from "./AddCategory";
 import { GifGrid } from "./GifGrid";
 
 export const GifExpertApp = () => {
-  const [categories, setCategories] = useState(["Digimon"]);
 
-  // const handleAdd = () => {
-  //   // setCategories([...categories, "HunterXHunter"]);
-  //   setCategories((categories) => [...categories, "Otro anime"]);
-  // };
+  // Default value of search.
+  const [categories, setCategories] = useState(["puzzles"]);
 
   return (
     <>
