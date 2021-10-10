@@ -10,8 +10,8 @@ describe("Pruebas en 02-template-string.js", () => {
   });
 
   //getSaludo debe de retornar Hola Stranger! si no hay argumento
-  test(`should getSaludo return "Hola Estraño" if dosen't have any arguments `, () => {
+  test(`should getSaludo return "Hola Extraño" if it dosen't have any arguments `, () => {
     const saludo = getSaludo();
-    expect(saludo).toBe("Hola Estraño");
+    expect(saludo).toBe("Hola Extraño");
   });
 });

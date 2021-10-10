@@ -6,7 +6,7 @@ const nombreCompleto = `${nombre} ${apellido}`;
 
 // console.log( nombreCompleto );
 
-export function getSaludo(nombre = "Estraño") {
+export function getSaludo(nombre = "Extraño") {
   return "Hola " + nombre;
 }
 

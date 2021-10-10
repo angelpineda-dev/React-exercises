@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { AddCategory } from "./AddCategory";
-import { GifGrid } from "./GifGrid";
+import { AddCategory } from "./Components/AddCategory";
+import { GifGrid } from "./Components/GifGrid";
 
 export const GifExpertApp = () => {
-
   // Default value of search.
   const [categories, setCategories] = useState(["puzzles"]);
 

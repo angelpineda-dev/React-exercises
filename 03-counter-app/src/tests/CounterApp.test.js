@@ -4,8 +4,10 @@ import "@testing-library/jest-dom";
 import CounterApp from "../CounterApp";
 
 describe("Pruebas para <CounterApp/>", () => {
+  /* El declararlo de esta manera nos permite acceder a las sugerencias de los metodos a través del punto. */
   let wrapper = shallow(<CounterApp />);
 
+  /* Función que ayuda a declarar el wrapper de forma global y resetear sus valores antes de cada test debido a que las pruebas se ejecutan en secuencia. */
   beforeEach(() => {
     wrapper = shallow(<CounterApp />);
   });
