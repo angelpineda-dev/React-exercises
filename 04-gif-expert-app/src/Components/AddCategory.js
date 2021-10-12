@@ -12,9 +12,9 @@ export const AddCategory = ({ setCategories }) => {
   // Function to Form
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Evaluations
+
     if (inputValue.trim().length > 2) {
-      setCategories((cats) => [inputValue,...cats]);
+      setCategories((cats) => [inputValue, ...cats]);
       setInputValue("");
     } else {
       console.warn("El campo no debe estar vacio o ser mayor a una letra");
@@ -24,12 +24,18 @@ export const AddCategory = ({ setCategories }) => {
   // What this object return?
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" value={inputValue} onChange={handleInputChange} placeholder="Buscar..." />
+      <p>{inputValue}</p>
+      <input
+        type="text"
+        value={inputValue}
+        onChange={handleInputChange}
+        placeholder="Buscar..."
+      />
     </form>
   );
 };
 
-// This object required...
+// This object is required...
 AddCategory.propTypes = {
   setCategories: PropTypes.func.isRequired,
 };
