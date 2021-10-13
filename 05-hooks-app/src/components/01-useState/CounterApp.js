@@ -13,7 +13,7 @@ const CounterApp = () => {
     <>
       <h2>Counter1 {counter1}</h2>
       <h2>Counter2 {counter2}</h2>
-      <hr />
+      <br />
 
       <button
         className="btn btn-primary"
