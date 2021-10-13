@@ -1,23 +1,23 @@
 import { useState } from "react";
 
 /* Custom hook no son más que simples funciones */
-export const useCounter = (initialState = 10) => {
-  const [state, setState] = useState(initialState);
+export const useCounter = (initialState = 1) => {
+  const [counter, setCounter] = useState(initialState);
 
-  const increment = (factor = 1) => {
-    setState(state + factor);
+  const increment = () => {
+    setCounter(counter + 1);
   };
 
-  const decrement = (factor = 1) => {
-    setState(state - factor);
+  const decrement = () => {
+    setCounter(counter - 1);
   };
 
   const reset = () => {
-    setState(initialState);
+    setCounter(initialState);
   };
 
   return {
-    state,
+    counter,
     increment,
     decrement,
     reset,
