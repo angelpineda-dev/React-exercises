@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <HookApp/> Debe mostrar el componente correctamente 1`] = `
+<div>
+  <h1>
+    Hooks
+  </h1>
+  <hr />
+  <MainApp />
+  <hr />
+  <Padre />
+  <hr />
+  <CallbackHook />
+  <hr />
+  <MemoHook />
+  <hr />
+  <Memorize />
+  <hr />
+  <Layout />
+  <hr />
+  <RealExampleRef />
+  <hr />
+  <FocusScreen />
+  <hr />
+  <MultipleCustomHooks />
+  <hr />
+  <FormWithCustomHook />
+  <hr />
+  <SimpleForm />
+  <hr />
+  <CounterWithCustomHook />
+  <hr />
+  <CounterApp />
+</div>
+`;

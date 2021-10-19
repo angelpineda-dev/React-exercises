@@ -1,4 +1,5 @@
 import { useForm } from "../02-useEffect/hooks/useForm";
+import { PropTypes } from "prop-types";
 
 const TodoAdd = ({ handleAddTodo }) => {
   const [{ description }, handleInputChange, reset] = useForm({
@@ -25,7 +26,7 @@ const TodoAdd = ({ handleAddTodo }) => {
     <>
       <h4>Agregar TODO</h4>
 
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="d-grid">
           <input
             type="text"
@@ -50,3 +51,7 @@ const TodoAdd = ({ handleAddTodo }) => {
 };
 
 export default TodoAdd;
+
+TodoAdd.propTypes = {
+  handleAddTodo: PropTypes.func.isRequired,
+};

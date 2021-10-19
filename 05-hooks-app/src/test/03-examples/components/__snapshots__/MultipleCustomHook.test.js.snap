@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <MultipleCustomHook/> Debe mostar el componente correctamente 1`] = `
+<div>
+  <h2>
+    Multiple Custom Hooks!
+  </h2>
+  <br />
+  <blockquote
+    className="blockquote text-end"
+  >
+    <p
+      className="mb-3"
+    />
+    <footer
+      className="blockquote-footer"
+    />
+  </blockquote>
+  <button
+    className="btn btn-primary"
+    onClick={[Function]}
+  >
+    Siguiente frase
+  </button>
+</div>
+`;

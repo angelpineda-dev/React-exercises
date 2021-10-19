@@ -1,4 +1,6 @@
-const TodoListitem = ({ todo, idx, handleDelete, handleToggle }) => {
+import PropTypes from "prop-types";
+
+const TodoListItem = ({ todo, idx, handleDelete, handleToggle }) => {
   return (
     <li className="list-group-item" key={todo.id}>
       <p
@@ -14,4 +16,11 @@ const TodoListitem = ({ todo, idx, handleDelete, handleToggle }) => {
   );
 };
 
-export default TodoListitem;
+export default TodoListItem;
+
+TodoListItem.propTypes = {
+  todo: PropTypes.object.isRequired,
+  idx: PropTypes.number.isRequired,
+  handleDelete: PropTypes.func.isRequired,
+  handleToggle: PropTypes.func.isRequired,
+};

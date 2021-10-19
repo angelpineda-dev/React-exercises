@@ -1,11 +1,12 @@
-import TodoListitem from "./TodoListitem";
+import TodoListItem from "./TodoListItem";
+import PropTypes from "prop-types";
 
 const TodoList = ({ todos, handleDelete, handleToggle }) => {
   return (
     <ul className="list-group list-group-flush">
       {todos.map((todo, i) => {
         return (
-          <TodoListitem
+          <TodoListItem
             key={todo.id}
             todo={todo}
             idx={i}
@@ -19,3 +20,9 @@ const TodoList = ({ todos, handleDelete, handleToggle }) => {
 };
 
 export default TodoList;
+
+TodoList.propTypes = {
+  todos: PropTypes.array.isRequired,
+  handleDelete: PropTypes.func.isRequired,
+  handleToggle: PropTypes.func.isRequired,
+};
