@@ -18,6 +18,7 @@ const SearchScreen = ({ history }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     history.push(`?q=${searchText}`);
+    
   };
 
   return (
@@ -37,11 +38,11 @@ const SearchScreen = ({ history }) => {
               className="form-control"
               onChange={handleInputChange}
             />
-            <input
+            <button
               type="submit"
               value="Search..."
               className="btn btn-outline-primary mt-2"
-            />
+            > Search </button>
           </form>
         </div>
         <div className="col-7">
