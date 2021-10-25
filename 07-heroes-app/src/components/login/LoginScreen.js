@@ -9,9 +9,11 @@ const LoginScreen = ({ history }) => {
     name: "Angel",
   };
 
-  const lastPath = localStorage.getItem("lastPath") || "/";
-
+  
   const handleLogin = () => {
+    
+    const lastPath = localStorage.getItem("lastPath") || "/";
+    
     const action = {
       type: types.login,
       payload: user,
