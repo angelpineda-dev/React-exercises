@@ -1,20 +1,20 @@
-import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom"
-import LoginScreen from "../components/auth/LoginScreen"
-import RegisterScreen from "../components/auth/RegisterScreen"
+import { Route, Redirect, Switch } from "react-router-dom";
+import LoginScreen from "../components/auth/LoginScreen";
+import RegisterScreen from "../components/auth/RegisterScreen";
 
 const AuthRouter = () => {
   return (
-    <Router>
-      <Switch>
+    <div className="auth__main">
+      <div className="auth__box-container">
+        <Switch>
+          <Route exact path="/auth/login" component={LoginScreen} />
+          <Route exact path="/auth/register" component={RegisterScreen} />
 
-        <Route exact path="/auth/login" component={LoginScreen} />
-        <Route exact path="/auth/register" component={RegisterScreen} />
+          <Redirect to="/auth/login" />
+        </Switch>
+      </div>
+    </div>
+  );
+};
 
-        <Redirect to="/auth/login"/>
-      </Switch>
-
-    </Router>
-  )
-}
-
-export default AuthRouter
+export default AuthRouter;
