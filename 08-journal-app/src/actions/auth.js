@@ -5,6 +5,7 @@ import { types } from "../types/types";
 export const startLoginEmailPassword = (email, password) => {
   return (dispatch) => {
     // deberia de llamar otro dispatch
+    // simulando async
     setTimeout(() => {
       dispatch(login(123, "Tomas"));
     }, 3500);
