@@ -9,7 +9,7 @@ describe('Pruebas en <AppRouter/>', () => {
     user: {logged: false}
   }
   
-  test('debe de mostrar el componente correctamente', () => {
+  test('debe de mostrar el login si no está autenticado', () => {
   
     const wrapper = mount(
       <AuthContext.Provider value={contextValue}>
