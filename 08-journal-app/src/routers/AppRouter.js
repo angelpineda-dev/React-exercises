@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { BrowserRouter as Router, Switch, Redirect } from "react-router-dom";
-import { Route } from "react-router";
 import { login } from "../actions/auth";
 import JournalScreen from "../components/journal/JournalScreen";
 import AuthRouter from "./AuthRouter";
