@@ -2,6 +2,7 @@ import { useEffect, useReducer } from "react";
 import { todoReducer } from "./todoReducer";
 import "./styles.css";
 import TodoList from "./TodoList";
+import TodoAdd from "./TodoAdd";
 
 const init = () => {
   return JSON.parse(localStorage.getItem("todos")) || [];
@@ -50,7 +51,7 @@ const TodoApp = () => {
           />
         </div>
         <div className="col-5 text-center">
-          <TodoApp handleAddTodo={handleAddTodo} />
+          <TodoAdd handleAddTodo={handleAddTodo} />
         </div>
       </div>
     </div>

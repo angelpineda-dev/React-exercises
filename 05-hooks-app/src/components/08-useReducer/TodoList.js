@@ -1,4 +1,4 @@
-import TodoListItem from "./TodoListItem";
+import TodoListItem from "./TodoListitem";
 import PropTypes from "prop-types";
 
 const TodoList = ({ todos, handleDelete, handleToggle }) => {

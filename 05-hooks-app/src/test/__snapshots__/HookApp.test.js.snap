@@ -8,6 +8,8 @@ exports[`Pruebas en <HookApp/> Debe mostrar el componente correctamente 1`] = `
   <hr />
   <MainApp />
   <hr />
+  <TodoApp />
+  <hr />
   <Padre />
   <hr />
   <CallbackHook />
